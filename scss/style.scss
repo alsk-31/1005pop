@@ -16,6 +16,7 @@ section.sec1 {
   p:nth-child(2) {
     margin-top: 150px;
     width: 65%;
+    font-family: spoka_L;
   }
 }
 .img01 {
@@ -84,549 +85,132 @@ section.sec3 {
   }
 }
 /* 4. PORTFOLIO 영역 */
-section.sec4 {
+.subtxt {
   max-width: 1200px;
   margin: 0 auto;
   margin-top: 300px;
-  .subt {
-    font-family: Sometimes;
-    font-weight: 900;
-    font-size: 36px;
-    margin-bottom: 90px;
-  }
+  margin-bottom: 100px;
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+}
+.sec-portfolio {
+  padding: 0 !important;
+  // background-color: #000;
   .slide {
     width: 100%;
     margin: 0 auto;
-    height: 360px;
-    // border: 1px solid #000;
-    .item {
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-      margin: 0 auto;
-      cursor: pointer;
-      .imgbox {
+    height: 520px;
+    background: #2d2d2d;
+    .swiper-wrapper {
+      .item {
         width: 100%;
-        height: 100%;
+        height: 520px;
         object-fit: cover;
-        background-repeat: no-repeat;
-      }
-      .title {
-        font-family: spoka_R;
-        display: inline-block;
-        position: absolute;
-        width: 282px;
-        text-indent: 1.2em;
-        bottom: 0;
-        height: 60px;
-        line-height: 60px;
-        background-image: linear-gradient(
-          rgba(32, 32, 32, 0),
-          rgba(32, 32, 32, 0.5)
-        );
-        color: #fff;
-      }
-    }
-  }
-  .owl-prev span {
-    position: absolute;
-    display: block;
-    text-indent: -9999px;
-    width: 21px;
-    height: 39px;
-    top: 170px;
-    left: 30px;
-    background: url(../../images/btns.png);
-    background-position: -6px -4px;
-  }
-  .owl-next span {
-    position: absolute;
-    display: block;
-    text-indent: -9999px;
-    width: 21px;
-    height: 39px;
-    top: 170px;
-    right: 30px;
-    background: url(../../images/btns.png);
-    background-position: -29px -4px;
-  }
-}
-#modal {
-  display: none;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  /*모달창 들어가는 내용*/
-  .modal_content {
-    width: 100%;
-    height: 6100px;
-    background-color: #2d2d2d;
-    margin-bottom: 50px;
-    z-index: 70;
-    .modalpage {
-      position: relative;
-      width: 1200px;
-      margin: 0 auto;
-      top: 250px;
-      z-index: 80;
-      margin-top: 400px;
-      margin-bottom: 200px;
-      /*노루페인트 홈페이지 설명*/
-      .modal1 {
-        position: relative;
-        width: 1200px;
         margin: 0 auto;
-        margin-top: 300px;
-        display: flex;
-        .moright {
-          margin-left: 100px;
-          margin-bottom: 200px;
-          h2 {
-            position: relative;
-            margin: 0 auto;
+        bottom: 180px;
+        z-index: 5;
+        width: 100%;
+        overflow: visible;
+        figcaption {
+          position: absolute;
+          left: 0;
+          right: 0;
+          opacity: 1;
+          padding: 0 60px;
+          height: auto;
+          text-align: left;
+          bottom: 70px;
+          z-index: 5;
+          overflow: visible;
+          .smalltxt {
+            font-size: 13px;
             color: #fff;
-            margin-bottom: 50px;
+            font-family: spoka_L;
+            bottom: -100px;
           }
-          p {
-            line-height: 1.9em;
-            font-family: spoka_R;
-            margin: 0 auto;
+          .bigtxt {
+            font-size: 26px;
+            margin: 0;
             color: #fff;
-            margin-bottom: 50px;
+            bottom: -100px;
           }
-          h3 {
+          .longtxt {
             color: #fff;
-            margin-bottom: 20px;
+            font-size: 15px;
+            font-family: spoka_L;
+            opacity: 0;
           }
-          ul {
-            display: flex;
-            li {
-              border: 1px solid #fff;
-              margin-right: 20px;
-              margin-bottom: 50px;
-              a {
-                color: #fff;
-                padding: 8px 15px;
-              }
-            }
+          .flexible-line {
+            width: 20%;
+            margin-top: 35px;
+            opacity: 0.5;
+            height: 1px;
+            background-color: #fff;
           }
         }
-        h3 {
-          margin-bottom: 20px;
-        }
-      }
-      /*스타일시트 소개*/
-      .modal2 {
-        display: inline-block;
-        position: relative;
-        margin-top: 500px;
-        width: 1200px;
-        margin: 0 auto;
-      }
-      /*인덱스페이지 설명*/
-      .modal3 {
-        margin-top: 250px;
-        display: flex;
-        .sub1title {
-          color: #fff;
-          font-size: 17px;
-          font-style: italic;
-          margin-bottom: 20px;
-        }
-        .m3sub {
-          margin-left: 100px;
-          color: #fff;
-          margin-top: 40px;
-          .header {
-            margin-bottom: 50px;
-          }
-          .slide {
-            margin-bottom: 140px;
-          }
-          .section2 {
-            margin-bottom: 90px;
-          }
-          .sub4 {
-            display: flex;
-            margin-bottom: 15px;
-            div {
-              width: 130px;
-              height: 160px;
-              background-image: url(../image/b1.jpg);
-              object-fit: cover;
-              background-repeat: no-repeat;
-              justify-content: space-between;
-              margin-right: 20px;
-              border-radius: 5px;
-            }
-          }
-          .section5 {
-            margin-bottom: 55px;
-          }
-        }
-      }
-      /*subpage no1~2 설명*/
-      .modal4 {
-        width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        margin-top: 250px;
-        .sub_group1 {
-          .sub1title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-          display: flex;
-          .subinfo_01_1 {
-            justify-content: space-between;
-            .slide01 {
-              margin-top: 70px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-            .company_p {
-              margin-top: 100px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-          }
-        }
-        .sub_group2 {
-          display: flex;
-          .subinfo_01_2 {
-            justify-content: space-between;
-            .slide02 {
-              margin-top: 70px;
-              color: #fff;
-              width: 150px;
-              margin-right: 30px;
-              margin-left: 40px;
-            }
-            .cago_p {
-              margin-top: 480px;
-              color: #fff;
-              width: 150px;
-              margin-right: 30px;
-              margin-left: 40px;
-            }
-          }
-          .sub1title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-          .cagoimg {
-            margin-top: 100px;
-            width: 300px;
-          }
-        }
-      }
-      /*R&D 설명*/
-      .modal5 {
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        margin-top: 250px;
-        margin-bottom: 300px;
-        .sub_group3_1 {
-          .sub1title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-          display: flex;
-          .subinfo_01_1 {
-            justify-content: space-between;
-            .info3_1 {
-              margin-top: 70px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-            .company_p {
-              margin-top: 100px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-          }
-        }
-        .sub_group3_2 {
-          display: flex;
-          .info_03_2 {
-            justify-content: space-between;
-          }
-          .info3_2 {
-            margin-top: 70px;
-            color: #fff;
-            width: 150px;
-            margin-right: 30px;
-            margin-left: 40px;
-          }
-          .sub3title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-        }
-      }
-      /*sub esg경영 및 투자정보*/
-      .modal6 {
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        margin-top: 250px;
-        margin-bottom: 300px;
-        .sub_group4_1 {
-          .sub4title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-          display: flex;
-          .subinfo_04_1 {
-            justify-content: space-between;
-            .info4_1 {
-              margin-top: 70px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-          }
-        }
-        .sub_group4_2 {
-          display: flex;
-          .info_04_2 {
-            justify-content: space-between;
-          }
-          .info4_2 {
-            margin-top: 70px;
-            color: #fff;
-            width: 150px;
-            margin-right: 30px;
-            margin-left: 40px;
-          }
-          .sub4title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-        }
-      }
+        figcaption:hover {
+          position: absolute;
+          left: 0;
+          right: 0;
+          padding: 0 60px;
+          height: auto;
+          text-align: left;
+          bottom: 70px;
+          z-index: 5;
+          overflow: visible;
+          transition: all 0.3s ease 0s;
 
-      .modal_close_btn {
-        margin-left: 300px;
-        p {
-          color: #fff;
+          .smalltxt {
+            font-size: 13px;
+            color: #fff;
+            font-family: spoka_L;
+          }
+          .bigtxt {
+            font-size: 26px;
+            margin: 0;
+            color: #fff;
+          }
+          .longtxt {
+            color: #fff;
+            font-size: 15px;
+            font-family: spoka_L;
+            opacity: 1;
+            transition: all 0.3s ease 0s;
+          }
+          .flexible-line {
+            width: 60%;
+            margin-top: 35px;
+            opacity: 0.5;
+            height: 1px;
+            background-color: #fff;
+          }
         }
       }
     }
   }
 }
-#modal2 {
-  // display: none;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  /*모달창 들어가는 내용*/
-  .modal_content {
-    width: 100%;
-    height: 4500px;
-    background-color: #2d2d2d;
-    margin-bottom: 50px;
-    z-index: 70;
-    .modalpage {
-      position: relative;
-      width: 1200px;
-      margin: 0 auto;
-      top: 250px;
-      z-index: 80;
-      margin-top: 400px;
-      margin-bottom: 200px;
-      /*노루페인트 홈페이지 설명*/
-      .modal1 {
-        position: relative;
-        width: 1200px;
-        margin: 0 auto;
-        margin-top: 300px;
-        display: flex;
-        .moright {
-          margin-left: 100px;
-          margin-bottom: 200px;
-          h2 {
-            position: relative;
-            margin: 0 auto;
-            color: #fff;
-            margin-bottom: 50px;
-          }
-          p {
-            line-height: 1.9em;
-            font-family: spoka_R;
-            margin: 0 auto;
-            color: #fff;
-            margin-bottom: 50px;
-          }
-          h3 {
-            color: #fff;
-            margin-bottom: 20px;
-          }
-          ul {
-            display: flex;
-            li {
-              border: 1px solid #fff;
-              margin-right: 20px;
-              margin-bottom: 50px;
-              a {
-                color: #fff;
-                padding: 8px 15px;
-              }
-            }
-          }
-        }
-        h3 {
-          margin-bottom: 20px;
-        }
-      }
-      /*스타일시트 소개*/
-      .modal2 {
-        display: inline-block;
-        position: relative;
-        margin-top: 500px;
-        width: 1200px;
-        margin: 0 auto;
-      }
-      /*인덱스페이지 설명*/
-      .modal3 {
-        margin-top: 250px;
-        display: flex;
-        .sub1title {
-          color: #fff;
-          font-size: 17px;
-          font-style: italic;
-          margin-bottom: 20px;
-        }
-        .m3sub {
-          margin-left: 100px;
-          color: #fff;
-          margin-top: 40px;
-          .header {
-            margin-bottom: 50px;
-          }
-          .slide {
-            margin-bottom: 140px;
-          }
-          .section2 {
-            margin-bottom: 90px;
-          }
-          .sub4 {
-            display: flex;
-            margin-bottom: 15px;
-            div {
-              width: 130px;
-              height: 160px;
-              background-image: url(../image/b1.jpg);
-              object-fit: cover;
-              background-repeat: no-repeat;
-              justify-content: space-between;
-              margin-right: 20px;
-              border-radius: 5px;
-            }
-          }
-          .section5 {
-            margin-bottom: 55px;
-          }
-        }
-      }
-      /*subpage no1~2 설명*/
-      .modal4 {
-        width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        margin-top: 250px;
-        .sub_group1 {
-          .sub1title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-          display: flex;
-          .subinfo_01_1 {
-            justify-content: space-between;
-            .slide01 {
-              margin-top: 70px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-            .company_p {
-              margin-top: 100px;
-              width: 150px;
-              color: #fff;
-              margin-left: 30px;
-              margin-right: 40px;
-            }
-          }
-        }
-        .sub_group2 {
-          display: flex;
-          .subinfo_01_2 {
-            justify-content: space-between;
-            .slide02 {
-              margin-top: 70px;
-              color: #fff;
-              width: 150px;
-              margin-right: 30px;
-              margin-left: 40px;
-            }
-            .cago_p {
-              margin-top: 480px;
-              color: #fff;
-              width: 150px;
-              margin-right: 30px;
-              margin-left: 40px;
-            }
-          }
-          .sub1title {
-            color: #fff;
-            font-size: 17px;
-            font-style: italic;
-            margin-bottom: 20px;
-          }
-          .cagoimg {
-            margin-top: 100px;
-            width: 300px;
-          }
-        }
-      }
-
-      .modal_close_btn2 {
-        margin-left: 300px;
-        p {
-          color: #fff;
-        }
-      }
-    }
-  }
+.owl-prev span {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+  width: 21px;
+  height: 39px;
+  top: 170px;
+  left: 30px;
+  background: url(../../images/btns.png);
+  background-position: -6px -4px;
+}
+.owl-next span {
+  position: absolute;
+  display: block;
+  text-indent: -9999px;
+  width: 21px;
+  height: 39px;
+  top: 170px;
+  right: 30px;
+  background: url(../../images/btns.png);
+  background-position: -29px -4px;
 }
 
 /*6. CONTACT ME*/
@@ -690,7 +274,7 @@ section.sec5 {
     }
   }
 }
-/*sub2_ portfolio */
+
 .toptab {
   width: 100%;
   max-width: 1200px;
@@ -722,6 +306,7 @@ section.sec5 {
   height: 60px;
   border-radius: 100px;
   font-size: 30px;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0);
   box-shadow: 3px 3px 3px rgb(109, 109, 109), -3px -3px 3px rgb(237, 237, 237);
   transition: 0.3s;
   -webkit-appearance: none;
@@ -731,7 +316,6 @@ section.sec5 {
 }
 
 footer {
-  position: fixed;
   width: 100%;
   bottom: 0;
   margin: 0 auto;
@@ -749,4 +333,7 @@ footer {
       font-size: 12px;
     }
   }
+}
+
+@media screen and (min-width: 1199px) {
 }

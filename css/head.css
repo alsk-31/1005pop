@@ -10,11 +10,6 @@
   font-family: Sometimes;
   src: url(../webfont/Sometimes\ Times.woff) format("woff");
 }
-* {
-  margin: 0;
-  padding: 0;
-}
-
 ul {
   list-style: none;
 }
@@ -25,7 +20,7 @@ a {
 }
 
 body {
-  font-family: spoka_R;
+  font-family: spoka_L;
   font-size: 15px;
   line-height: 1.7em;
 }
@@ -37,7 +32,7 @@ header {
   height: 80px;
   line-height: 80px;
   margin: 0 auto;
-  font-family: spoka_B;
+  font-family: spoka_R;
   background-color: #fff;
   position: fixed;
   z-index: 50;
