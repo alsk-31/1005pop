@@ -1,34 +1,5 @@
 @charset "UTF-8";
 /* 1. 인사말 영역*/
-section.sec1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  margin-top: 100px;
-}
-section.sec1 p.firstsaying {
-  width: 100%;
-  font-family: Sometimes;
-  font-weight: 900;
-  font-size: 36px;
-  margin-left: 50%;
-  margin-bottom: 90px;
-  padding: 90px;
-}
-section.sec1 p:nth-child(2) {
-  margin-top: 150px;
-  width: 65%;
-  font-family: spoka_L;
-}
-
-.img01 {
-  width: 100%;
-  margin: 0 auto;
-  height: 450px;
-  background: url(../image/topslide_01.png) center/cover;
-  margin-top: 100px;
-}
-
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {
   width: 100%;
@@ -37,14 +8,13 @@ section.sec2 {
   margin-top: 250px;
 }
 section.sec2 p.firstsaying {
-  width: 100%;
   font-family: Sometimes;
   font-weight: 900;
   font-size: 36px;
   margin-bottom: 90px;
 }
 section.sec2 .sec2wrap {
-  width: 100%;
+  width: 100wh;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -99,122 +69,33 @@ section.sec3 .symbolbg .innerlogo {
   font-size: 36px;
 }
 
-.sec-portfolio {
-  padding: 0 !important;
-}
-.sec-portfolio .slide {
+.swiper {
   width: 100%;
-  margin: 0 auto;
-  height: 520px;
-  background: #2d2d2d;
+  height: 100%;
 }
-.sec-portfolio .slide .swiper-wrapper .item {
+.swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper .swiper-wrapper .swiper-slide .slide-hover-box {
+  display: block;
+  position: absolute;
   width: 100%;
-  height: 520px;
+  height: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide .slide-hover-box figure {
+  position: absolute;
+}
+.swiper .swiper-wrapper .swiper-slide .slide-hover-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 auto;
-  bottom: 180px;
-  z-index: 5;
-  width: 100%;
-  overflow: visible;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  opacity: 1;
-  padding: 0 60px;
-  height: auto;
-  text-align: left;
-  bottom: 70px;
-  z-index: 5;
-  overflow: visible;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption .smalltxt {
-  font-size: 13px;
-  color: #fff;
-  font-family: spoka_L;
-  bottom: -100px;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption .bigtxt {
-  font-size: 26px;
-  margin: 0;
-  color: #fff;
-  bottom: -100px;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption .longtxt {
-  color: #fff;
-  font-size: 15px;
-  font-family: spoka_L;
-  opacity: 0;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption .flexible-line {
-  width: 20%;
-  margin-top: 35px;
-  opacity: 0.5;
-  height: 1px;
-  background-color: #fff;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption:hover {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 0 60px;
-  height: auto;
-  text-align: left;
-  bottom: 70px;
-  z-index: 5;
-  overflow: visible;
-  transition: all 0.3s ease 0s;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption:hover .smalltxt {
-  font-size: 13px;
-  color: #fff;
-  font-family: spoka_L;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption:hover .bigtxt {
-  font-size: 26px;
-  margin: 0;
-  color: #fff;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption:hover .longtxt {
-  color: #fff;
-  font-size: 15px;
-  font-family: spoka_L;
-  opacity: 1;
-  transition: all 0.3s ease 0s;
-}
-.sec-portfolio .slide .swiper-wrapper .item figcaption:hover .flexible-line {
-  width: 60%;
-  margin-top: 35px;
-  opacity: 0.5;
-  height: 1px;
-  background-color: #fff;
-}
-
-.owl-prev span {
-  position: absolute;
-  display: block;
-  text-indent: -9999px;
-  width: 21px;
-  height: 39px;
-  top: 170px;
-  left: 30px;
-  background: url(../../images/btns.png);
-  background-position: -6px -4px;
-}
-
-.owl-next span {
-  position: absolute;
-  display: block;
-  text-indent: -9999px;
-  width: 21px;
-  height: 39px;
-  top: 170px;
-  right: 30px;
-  background: url(../../images/btns.png);
-  background-position: -29px -4px;
 }
 
 /*6. CONTACT ME*/
