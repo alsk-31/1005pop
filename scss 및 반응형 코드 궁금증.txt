@@ -1,65 +1,14 @@
 https://velog.io/@bellecode20/input-label%EC%97%90-hover%ED%96%88%EC%9D%84-%EB%95%8C-%ED%9A%A8%EA%B3%BC
 [SCSS] input label에 hover했을 때 효과  >>> hover했을 시 작성방법 ,, 부모자식 관계 활용,, 보러가기
 
+https://velog.io/@eunjin/CSSBEM%EC%9D%B4%EB%9E%80-CSS-%ED%81%B4%EB%9E%98%EC%8A%A4-%EC%9D%B4%EB%A6%84-%EB%A7%8C%EB%93%9C%EB%8A%94-%EC%9D%BC%EC%A2%85%EC%9D%98-%EC%95%BD%EC%86%8D%EC%9D%B4%EB%8B%A4
+
+https://prography-tech.github.io/2019/12/31/html-css-class-naming/
+클래스명 //
+
 
  <div class="separator-line-horrizontal-medium-light2 opacity5 bg-white margin-35px-top sm-margin-15px-top"></div>
  >> 줄 선택시 동작 클래스
 
 
-.hover-option2 .separator-line-horrizontal-medium-light2 {
-  opacity: 0.5;
-}
-
-
-.opacity5 {
-  opacity: 0.5;
-}
-
-4. 포트폴리오 코드 
-<p class="subtxt">PORTFOLIO</p>
-    <section class="sec-portfolio">
-      <div class="slide">
-        <div class="owl-carousel owl-theme">
-            <!--start slide item-->
-            <figure class="item" style="background-image: url(image/slide03.jpg); width: 474.5px; ">
-              <figcaption>
-                <a href="#">
-                <span class="smalltxt">web design</span>
-                <p class="bigtxt">웹 디자인</p>
-                <p class="longtxt">단순 홈페이지 제작만이 아닌 고객의 소통을 위한 도구를 제작하여 드리며 스토리텔링과 바이럴 마케팅 등을 컨설팅하여 최고의 효과를 기대할 수 있는 솔루션을 제공합니다.</p>
-                </a>
-               <div class="flexible-line"></div>
-               </figcaption>
-            </figure>
-
-        </div>
-      </div>
-    </section>
-<sec1. 인사말, 가로스크롤현상 >
-
-
-figuarecaption:hover 시 (설명부분)
-.container .hover-option8 .grid-item figure:hover figcaption {
-  padding: 20px;
-}
-.bg-white {
-  background-color: #fff;
-}
-
-.margin-35px-top {
-  margin-top: 35px;
-}
-
-
-sm-margin-15px-top
-
-.opacity-medium {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.75;
-  top: 0;
-  left: 0;
-  background-color: #000;
-}
-
+https://aboooks.tistory.com/189  // word-break  줄바꿈속성 설명 

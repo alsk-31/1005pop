@@ -1,5 +1,34 @@
 @charset "UTF-8";
 /* 1. 인사말 영역*/
+section.sec1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+section.sec1 p.firstsaying {
+  font-family: Sometimes;
+  font-weight: 900;
+  font-size: 36px;
+  margin-bottom: 90px;
+  display: flex;
+}
+section.sec1 p:nth-child(2) {
+  margin-top: 150px;
+  right: 0;
+  width: 65%;
+  font-family: spoka_L;
+  flex-grow: 1;
+}
+
+.img01 {
+  width: 100%;
+  margin: 0 auto;
+  height: 450px;
+  background: url(../image/topslide_01.png) center/cover;
+  margin-top: 100px;
+}
+
 /* 2. KangSeonga 소개 영역*/
 section.sec2 {
   width: 100%;
@@ -69,33 +98,149 @@ section.sec3 .symbolbg .innerlogo {
   font-size: 36px;
 }
 
-.swiper {
+/*포트폴리오 스와이퍼*/
+section.sec4 {
+  padding: 0 !important;
+  background-color: #000;
+  overflow: hidden;
+  display: block;
+}
+section.sec4 .swiper .swiper-wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
+  z-index: 1;
+  transition-property: transform;
+  box-sizing: content-box;
+  background: rgba(0, 0, 0, 0.8);
 }
-.swiper .swiper-wrapper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+section.sec4 .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+  height: 500px;
+  position: relative !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
 }
-.swiper .swiper-wrapper .swiper-slide .slide-hover-box {
-  display: block;
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box {
   position: absolute;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  /*카테고리 hover 동작*/
 }
-.swiper .swiper-wrapper .swiper-slide .slide-hover-box figure {
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box .bg-layer {
   position: absolute;
-}
-.swiper .swiper-wrapper .swiper-slide .slide-hover-box img {
-  display: block;
-  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure {
+  bottom: 150px;
+  z-index: 5;
+  width: 100%;
+  overflow: visible;
+  position: absolute !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption {
+  display: block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  padding: 0 60px;
+  text-align: left;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-en {
+  position: relative;
+  bottom: -100px;
+  transition: all 0.3s ease 0s;
+  font-family: spoka_R;
+  margin-bottom: 10px;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-title {
+  position: relative;
+  bottom: -100px;
+  transition: all 0.3s ease 0s;
+  font-size: 30px;
+  font-family: spoka_B;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .cago-sub {
+  position: relative;
+  font-size: 14px;
+  font-family: spoka_L;
+  color: #fff;
+  margin-top: 25px;
+  bottom: -40px;
+  transition: all 0.3s ease 0s;
+  opacity: 0;
+  width: 90%;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure figcaption .flexible-line {
+  width: 20%;
+  transition: all 0.3s ease 0s;
+  margin-top: 35px;
+  opacity: 0.5;
+  height: 1px;
+  background-color: #fff;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover {
+  bottom: 150px;
+  z-index: 5;
+  width: 100%;
+  overflow: visible;
+  position: absolute !important;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption {
+  display: block;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  padding: 0 60px;
+  text-align: left;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-en {
+  position: relative;
+  font-family: spoka_R;
+  margin-bottom: 10px;
+  transition: all 0.3s ease 0s;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #fff;
+  bottom: 0;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-title {
+  font-size: 30px;
+  font-family: spoka_B;
+  bottom: 0;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .cago-sub {
+  font-size: 14px;
+  font-family: spoka_L;
+  color: #fff;
+  margin-top: 25px;
+  width: 90%;
+  bottom: 0;
+  opacity: 1;
+}
+section.sec4 .swiper .swiper-wrapper .swiper-slide .slide-hover-box figure:hover figcaption .flexible-line {
+  width: 40%;
+  margin-top: 35px;
+  opacity: 0.5;
+  height: 1px;
+  background-color: #fff;
 }
 
 /*6. CONTACT ME*/
