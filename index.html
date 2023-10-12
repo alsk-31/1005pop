@@ -35,19 +35,22 @@
             <li><a href="#">CONTACT</a></li>
           </ul>
         </nav>
+        <div class="sidemenu">>menu</div>
       </div>
     </header>
     <!--1. 인사말 영역 -->
     <section class="sec1">
-      <p class="firstsaying">Nice meet you !</p>
-      <p data-aos="fade-up" data-aos-duration="3000">
+      <p class="firstsaying">abcedfde</p>
+      <p class="verticaltxt">welcome to Designer.kang Homepage</p>
+      <p class="sec1-sub" data-aos="fade-up" data-aos-duration="3000">
         강성아 홈페이지에 오신것을 환영합니다.강성아 홈페이지에 오신것을 환영합니다. 강성아 홈페이지에 오신것을 환영합니다.강성아 홈페이지에 오신것을 환영합니다.
       </p>
     </section>
     <div class="img01"></div>
     <!--2. KangSeonga 소개영역 -->
     <section class="sec2">
-      <p class="firstsaying" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">Kang Seong-a.</p>
+      <p class="firstsaying" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400" data-aos-once="true">Kang Seong-a.      <a class="btn-view" href="#" >자세히보기</a></p>
+
       <div class="sec2wrap">
         <div class="myself">
           <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600" data-aos-once="true">
@@ -94,35 +97,14 @@
       </div>
     </section>
     <!--4. PORTFOLIO 영역 -->
-    <p class="subtxt">PORTFOLIO</p>
+    <p class="subtxt">PORTFOLIO<a class="btn-view" href="#" >자세히보기</a></p>
     <!-- Swiper -->
     <section class="sec4">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+       
         <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/slide03.jpg');width: 474.5px;
-        ">
-       <div class="slide-hover-box">
-        <div class="bg-layer"></div>
-        <figure>
-          <figcaption>
-            <a href="#"><span class="cago-en ">design</span>
-            <p class="cago-title">홈페이지</p>
-            <p class="cago-sub">
-              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
-              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
-              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
-              제공합니다.
-            </p>
-            </a>
-            <div class="flexible-line"></div>
-          </figcaption>
-        </figure>
-      </div>  
-      </div>
-    <!--swiper-slide end-->
-        <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/slide03.jpg');width: 474.5px;
+        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
         ">
        <div class="slide-hover-box">
         <div class="bg-layer"></div>
@@ -144,7 +126,29 @@
       </div>
     <!--swiper-slide end-->
         <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/slide03.jpg');width: 474.5px;
+        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
+        ">
+       <div class="slide-hover-box">
+        <div class="bg-layer"></div>
+        <figure>
+          <figcaption>
+            <a href="#"><span class="cago-en ">design</span>
+            <p class="cago-title">시각디자인 </p>
+            <p class="cago-sub">
+              CI. BI 부터 카탈로그, 브로슈어, 포스터등 다양한
+              인쇄매체의 목적에 적합한 이미지 정립과 정보전달이
+              용이한 디자인개발 및 구현을 위한 최상의 프로세스를
+              제공합니다.
+            </p>
+            </a>
+            <div class="flexible-line"></div>
+          </figcaption>
+        </figure>
+      </div>  
+      </div>
+    <!--swiper-slide end-->
+        <!--swiper-slide start-->
+        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
         ">
        <div class="slide-hover-box">
         <div class="bg-layer"></div>
@@ -166,7 +170,7 @@
       </div>
     <!--swiper-slide end-->
         <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/slide03.jpg');width: 474.5px;
+        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
         ">
        <div class="slide-hover-box">
         <div class="bg-layer"></div>
@@ -188,7 +192,7 @@
       </div>
     <!--swiper-slide end-->
         <!--swiper-slide start-->
-        <div class="swiper-slide" style="background-image:url('image/slide03.jpg');width: 474.5px;
+        <div class="swiper-slide" style="background-image:url('image/cago_01.png');width: 384px;
         ">
        <div class="slide-hover-box">
         <div class="bg-layer"></div>
@@ -209,6 +213,7 @@
       </div>  
       </div>
     <!--swiper-slide end-->
+     
  
       </div>
       <!-- start slider pagination -->
@@ -277,7 +282,7 @@
       //포트폴리오 롤링컨텐츠(6) 스크립트 : swiper
       var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
-        spaceBetween: 0,
+        spaceBetween: 24,
         autoplay: {
         delay: 4000,
         disableOnInteraction: false,
