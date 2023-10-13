@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .modal--bg {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: gray;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .visible {
+      visibility: visible;
+    }
+
+    .hidden {
+      background-color: white;
+      visibility: hidden;
+    }
+  </style>
+  <body>
+    <button class="btn-open">Open Modal</button>
+    <div class="modal-bg hidden">
+      <div class="modal">
+        <p class="modal__text">Modal</p>
+        <button class="btn-close">X</button>
+      </div>
+    </div>
+    <script>
+      const openBtn = document.querySelector(".btn-open");
+      const closeBtn = document.querySelector(".btn-close");
+      const modal = document.querySelector(".modal-bg");
+
+      openBtn.addEventListener("click", showModal);
+      closeBtn.addEventListener("click", closeModal);
+
+      function showModal() {
+        modal.classList.remove("hidden");
+        modal.classList.add("visible");
+      }
+
+      function closeModal() {
+        modal.classList.add("hidden");
+        modal.classList.remove("visible");
+      }
+    </script>
+  </body>
+</html>

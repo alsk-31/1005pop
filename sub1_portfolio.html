@@ -8,13 +8,11 @@
     <style></style>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/head.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="js/swiper-bundle.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
   </head>
   <body>
     <header>
@@ -37,36 +35,50 @@
             <li><a href="#">PORTFOLIO</a></li>
             <li><a href="#">CONTACT</a></li>
           </ul>
-          <div class="sidemenu">d</div>
         </nav>
+        <div class="sidemenu">>menu</div>
       </div>
     </header>
-
-    <!--1. 카테고리 메뉴 -->
-    <div class="toptab">
-      <ul class="sub2nav">
-        <li><a href="#">homepage</a></li>
-        <li><a href="#">2D design</a></li>
-        <li><a href="#">illustrator</a></li>
-        <li><a href="#">editorial</a></li>
-        <li><a href="#">logo</a></li>
-      </ul>
-    </div>
-
-    <!--2. KangSeonga 소개영역 -->
-
-    <!--3. 로고 및 상징 이미지 영역-->
-
-    <!--5. contact 영역 -->
-
-    <div class="btntop">Top</div>
-    <footer>
-      <div class="footerwrap">
-        <p>디자이너 강성아 &nbsp;| &nbsp; E-mail : alsk-31@naver.com</p>
-        <p>Copyright (C) 2023 Designer Kang seong a All Rights Reserved.</p>
+    <!--6. subpage1_portfolio 영역 -->
+    <section class="sec6">
+      <!--모달창 시작-->
+      <div class="modal-bg hidden">
+        <div class="modal">
+          <img src="./image/modal1.jpg" alt="" />
+          <button class="btn-close">X</button>
+        </div>
       </div>
-    </footer>
 
+      <!--모달창 끝-->
+      <p class="firstsaying">abcedfde</p>
+      <div class="portfolio-list">
+        <div class="p-wrap">
+          <!--item1 시작-->
+          <div class="p-item btn-open">
+            <a href="#">
+              <figure class="bg-white">
+                <div class="p-img">
+                  <img src="./image/1672709575_9684.jpg" alt="" />
+                </div>
+                <figcaption class="p-txtbox">
+                  <p class="p-title">디자인제목</p>
+                  <p class="p-sub">간단한 내용 입력하기</p>
+                </figcaption>
+              </figure>
+            </a>
+          </div>
+          <!--item1  end-->
+        </div>
+      </div>
+    </section>
+
+    <script>
+      //모달창이벤트, 포트폴리오 클릭시 나오는 모달창
+      const openBtn = document.getElementsByClassName("btn-open");
+      const closeBtn = document.getElementsByClassName("btn-close");
+      const modal = document.getElementsByClassName("modal-bg");
+      // 더입력할것
+    </script>
     <script>
       //스크롤이벤트 , 탑메뉴, 탑버튼(클릭:최하단에 위치함) 스크립트
       document.getElementsByClassName("btntop")[0].onclick = function () {

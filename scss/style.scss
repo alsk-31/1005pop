@@ -1,6 +1,7 @@
 /*자세히보기 버튼 스타일*/
 .btn-view {
   position: relative;
+  bottom: 5px;
   margin-left: 50px;
   font-family: spoka_R;
   font-size: 13px;
@@ -16,6 +17,7 @@
   &:hover {
     color: #fff;
     font-family: spoka_L;
+    font-weight: 500;
   }
   &:after {
     position: absolute;
@@ -50,6 +52,7 @@ section.sec1 {
     display: flex;
   }
   .sec1-sub {
+    position: sticky;
     margin-top: 150px;
     right: 0;
     width: 65%;
@@ -339,6 +342,120 @@ section.sec5 {
         font-size: 13px;
         td {
           line-height: 2em;
+        }
+      }
+    }
+  }
+}
+/*subpage1.*/
+//modal창 스타일
+/*포트폴리오 아이템 스타일*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  .bg {
+    width: 100%;
+    bottom: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+.modalBox {
+  position: absolute;
+  background-color: #fff;
+  img {
+    width: 400px;
+    height: 200px;
+    padding: 15px;
+  }
+
+  button {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+  }
+}
+.hidden {
+  display: none;
+}
+section.sec6 {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* 포트폴리오 타이틀 및 설명*/
+  p.firstsaying {
+    font-family: Sometimes;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: 150px;
+    margin-bottom: 160px;
+    display: flex;
+  } /*포트폴리오 그리드*/
+  .portfolio-list {
+    margin-top: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    .p-wrap {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(50px, auto));
+      grid-template-rows: 384px;
+      gap: 24px 24px;
+      text-align: center;
+    }
+    .p-item {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      a {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
+        top: 0;
+        &:hover {
+          top: -100px;
+        }
+        .bg-white {
+          overflow: hidden;
+          position: relative;
+          .p-img {
+            position: relative;
+            transition: all 0.3s ease 0s;
+            img {
+              width: 384px;
+              height: 300px;
+              object-fit: cover;
+              vertical-align: middle;
+              top: 0px;
+            }
+          }
+          .p-txtbox {
+            position: relative;
+            opacity: 1;
+            padding: 20px;
+            height: auto;
+            top: 0px;
+            // border: 1px solid #ce0e2d;
+            transition: all 0.3s ease 0s;
+            .p-title {
+              font-size: 16px;
+              font-family: spoka_R;
+              text-align: center;
+            }
+            .p-sub {
+              font-size: 13px;
+              color: rgb(99, 99, 99);
+              text-align: center;
+            }
+          }
         }
       }
     }

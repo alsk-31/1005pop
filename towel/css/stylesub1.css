@@ -41,7 +41,7 @@
 }
 .infotab p span {
   font-weight: 600;
-  color: #E25E3E;
+  color: #e25e3e;
   font-size: 18px;
 }
 .infotab ul {
@@ -112,7 +112,7 @@
   margin-top: 20px;
   line-height: 1.8em;
 }
-/*탭메뉴컨텐츠*/
+/*탭메뉴컨텐츠 */
 
 .selllist {
   width: 1280px;
@@ -165,14 +165,15 @@ h3 {
 }
 #ibtn p.m:last-child::after {
   margin-right: 0px;
-  
 }
 #ibtn p.new,
 #ibtn p.hot {
   background: #2d2d2d;
   color: #fff;
 }
-#price{margin-bottom: 15px;}
+#price {
+  margin-bottom: 15px;
+}
 .morebtn {
   position: relative;
   top: 500px;
